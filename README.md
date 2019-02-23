@@ -16,7 +16,7 @@
 本repo主要记录技术相关的能力，实际上fe工程师作为一种职业，在技术上的能力往往不能够涵盖整个的能力水平，在和前辈的交流和分享中，得到一种fe能力模型，在这里贴出给大家参考：
 
 <div align="center">
-    <img width="300px" src="http://github.com/feaswcy/fe-playground/raw/master/doc-assets/img/fe-power.png">
+    <img width="300px" src="https://raw.githubusercontent.com/feaswcy/fe-playground/master/doc-assets/img/fe-power.png">
     <p>fe工程师能力模型</p>
 </div>
 
