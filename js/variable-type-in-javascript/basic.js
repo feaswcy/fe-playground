@@ -16,6 +16,24 @@ typeof a // undefined
 console.log(b)
 var b
 
+/**
+ * null 是js 对象系统原型链的顶端
+ * null标识空对象指针，实际上undefined派生自null，因此双等号时 两者相等 即 null == undefined为 true
+ * typeof null 将会返回object
+ * Object.prototype.toString.call(null)  // 将返回[object Null]
+ */
+null == undefined // true
+null === undefined //false
+typeof null // object
+Object.prototype.toString.call(null) // [object Null]
+
+/**
+ * boolean 可以通过new Boolean创建，该方法如果不指定参数，默认值为布尔值false
+ * 布尔值false、true和new Boolean创建的变量的不同点在于，前者是值，后者是一个对象，值是true或者false
+ * Boolean类主要用处在于， 调用布尔值的toString方法时，先将其转换为一个布尔对象，在调用这个对象的toString方法
+ */
+
+
 console.log('-- TEST string --')
 /**
  * 
@@ -24,7 +42,7 @@ console.log('-- TEST string --')
 
 
  console.log('-- TEST number --')
- 
+
  /**
   * 
   * 
