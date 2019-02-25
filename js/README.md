@@ -63,7 +63,7 @@ Object.defineProperty()
 
 microTask：MutationObsever 、Promise.then
 
-macroTask ：setTimeout、MessageChannel、postMessage、setImmediate
+macroTask：setTimeout、MessageChannel、postMessage、setImmediate
 
 - callback、promise、async/await、eventEmiter
 - 手动实现一个eventEmiter？

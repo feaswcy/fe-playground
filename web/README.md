@@ -4,9 +4,18 @@
 - webview 解析html的过程
 - BOM
 
+## 浏览器的组成部分([浏览器的组成部分](https://mrhuang87.github.io/2017/12/24/typescript-in-a-browser/))
+用户界面(User Interfaces)
+浏览器引擎(Browser engine)
+渲染引擎(Rendering engine)
+组件引擎(Widget engine/UI 后端)
+Javascript解释器
+网络
+存储
+
 - web 核心内容分析一： 登录、注册
 
-滴滴登录账号体系的设计
+登录账号体系的设计
 
 背景
 
