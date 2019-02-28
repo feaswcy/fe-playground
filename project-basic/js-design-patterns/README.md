@@ -4,3 +4,5 @@
 ## 单例模式
 
 
+## 函数式编程
+lodash debounce https://lodash.com/docs#debounce

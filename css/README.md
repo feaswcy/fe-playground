@@ -21,10 +21,13 @@
 ### 硬件加速
 
 ### requestAnimationFrame API
+截屏组件:
 
 ### svg
 
 ### canvas
 
+### dom 样式 api
+Client width : https://stackoverflow.com/questions/21064101/understanding-offsetwidth-clientwidth-scrollwidth-and-height-respectively
 
 
