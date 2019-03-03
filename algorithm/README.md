@@ -14,6 +14,40 @@ write leecode 每天刷至少两道题，时间控制在30分钟以内
 </div>
 
 ## 斐波那契数列
+斐波那契数列是这样一个数列：从第三项开始，每一项都是前两项的相加之和，它的每项值是这样的：
+[1, 1, 2, 3, 5, 8, 13, 21, 34, ...],转换为算法问题， 它的原始定义就是
+
+// n >= 0
+```javascript
+function Fibo(n){
+    return n < 2 ? 1 : (Fibo(n-1) + Fibo(n-2))
+}
+```
+
+// 使用额外的空间存贮上一步计算的结果
+```javascript
+function fabonacci() {
+    var cache = [0, 1];
+    return function __fabonacci(n) {
+        return typeof cache[n] === 'number'
+               ? cache[n]
+               : cache[n] = __fabonacci(n - 1) + __fabonacci(n - 2);
+    };
+}
+// 采用递归循环叠加计算
+function fibonacci(n) {
+    let current = 0;
+    let next = 1;
+    let temp;
+    for(let i = 0; i < n; i++){
+        temp = current;
+        current = next;
+        next += temp;
+    }
+    return current;
+}
+
+````
 
 ## 洗牌问题
 
