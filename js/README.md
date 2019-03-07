@@ -1,29 +1,25 @@
-ES6之前的javascript
-1) es5 and below
+js部分按目前社区的主流语言的版本分类为
++ js核心，(js-core)[]
++ EcmaScript 6， es6相关 
++ nodejs，服务端javascript相关
++ typeScript，微软推出的javascript的超集
+
+### js-core
+包含js核心知识，数据类型，原型、原型链，执行上下文，作用域，作用域链，闭包
+
 
 - 基本数据类型
 
 [js数据类型](https://juejin.im/post/5b2b0a6051882574de4f3d96 )
 null， undefined，boolean，string，object，number，复合类型function array,特殊类型RegExp， Date（日期)
 
-- obj的创建与this 作用域
+- 原型链、构造函数以及js的object，专题见(issue0)[]
 
-最佳实践：属性由this创建，方法单独写在函数的原型链上，function.prototype.doSth
+- 正则表达式, 专题见(issue1)[]
 
-this的四种使用方式：1.作为普通函数中 2. 对象的方法 3 new 中指向新的对象 4apply和call改变this的指向
+- 执行上下文，专题见(issue2)[]
 
-- prototype 和 proto
-
-prototype是函数的一个属性，用来存放这个函数作为构造函数时所具有的属性和方法，new 出来的一个对象会和prototype拥有相同的方法
-
-proto是对象用来标明所对应的原型链上的方法
-
-
-- 正则表达式
-
-
-
-
+- 作用域与闭包，专题见(issue3)[]
 
 2）ES6之后的javascript
 - 相比es5多了哪些特性

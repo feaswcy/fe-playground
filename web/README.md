@@ -19,6 +19,18 @@ http2.0通过在应用层和传输层之间增加一个二进制的分帧层，�
 ### 服务端推送
 服务端可以向客户端推送css、javascript以及图片
 
+## http状态码
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| 204  | Content Cell  |
+| 201  | Content Cell  |
+| 202  | Content Cell  |
+| 400  | Content Cell  |
+| 404  | Content Cell  |
+| 404  | Content Cell  |
+
+
 
 ## 浏览器的组成部分([浏览器的组成部分](https://mrhuang87.github.io/2017/12/24/typescript-in-a-browser/))
 用户界面(User Interfaces)

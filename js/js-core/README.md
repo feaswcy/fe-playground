@@ -8,3 +8,9 @@ https://www.jianshu.com/p/d3a02ffe94b6
 https://segmentfault.com/q/1010000010025425
 
 cube-ui create api;https://github.com/cube-ui/vue-create-api/blob/master/README_zh-CN.md
+
+## promise 的理解与实现
+
+
+## js的执行上下文
+

@@ -6,3 +6,5 @@
 
 ## 函数式编程
 lodash debounce https://lodash.com/docs#debounce
+
+## 发布订阅模式
