@@ -27,6 +27,6 @@ lighthouse
 
 ## 总结
 
-fisrt 找到瓶颈、
+first 找到瓶颈、
 second 先做收益最大的、
 last 量化确认效果

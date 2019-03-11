@@ -7,7 +7,6 @@ js部分按目前社区的主流语言的版本分类为
 ### js-core
 包含js核心知识，数据类型，原型、原型链，执行上下文，作用域，作用域链，闭包
 
-
 - 基本数据类型
 
 [js数据类型](https://juejin.im/post/5b2b0a6051882574de4f3d96 )
@@ -21,20 +20,14 @@ null， undefined，boolean，string，object，number，复合类型function ar
 
 - 作用域与闭包，专题见(issue3)[]
 
+## Ecmascript 6
++ babel的原理与配置文件，配合webpack的babel-loader
++ Es6新特性
+
 2）ES6之后的javascript
 - 相比es5多了哪些特性
 
-const ，let 声明需要在block的最顶部（"解决变量提升"）
 
-解构赋值，模板字符串的写法
-
-箭头函数，没有arguments并且不能作为构造函数
-
-- import & export
-
-commonjs的module会在require的时候进行执行，然后在内存中全局维护一个加载的已加载的module信息，module的export会被挂在这个module信息的exports属性上
-
-- Object.xxx相关方法
 
 函数式编程
 
@@ -69,3 +62,6 @@ _ 模块化
 
 Object 的 this
 
+
+
+## typeScript
