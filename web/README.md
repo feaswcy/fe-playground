@@ -4,6 +4,10 @@
 - webview 解析html的过程
 - BOM
 
+
+## OSI模型与TCP的三次握手
+
+
 ## http https
 HTTP的基本优化：
 + 带宽，目前在4g网络以及一般的网络环境中，带宽的影响已经变得越来越小
@@ -23,12 +27,16 @@ http2.0通过在应用层和传输层之间增加一个二进制的分帧层，�
 
 | First Header  | Second Header |
 | ------------- | ------------- |
-| 204  | Content Cell  |
+| 200  | Content Cell  |
 | 201  | Content Cell  |
 | 202  | Content Cell  |
-| 400  | Content Cell  |
+| 301  | Content Cell  |
+| 302  | Content Cell  |
+| 303  | Content Cell  |
+| 304  | Content Cell  |
+| 402  | Content Cell  |
 | 404  | Content Cell  |
-| 404  | Content Cell  |
+| 500  | Content Cell  |
 
 
 

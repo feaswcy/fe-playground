@@ -20,24 +20,14 @@ null， undefined，boolean，string，object，number，复合类型function ar
 
 - 作用域与闭包，专题见(issue3)[]
 
-## Ecmascript 6
+## Ecmascript 6（相比es5多了哪些特性）
 + babel的原理与配置文件，配合webpack的babel-loader
 + Es6新特性
 
-2）ES6之后的javascript
-- 相比es5多了哪些特性
 
 
-
-函数式编程
-
-Object.keys  for(var key in Obj)
-
-Object.defineProperty()
-
-
-服务端的javascript
-- 可以做什么
+## 服务端的javascript
++ 可以做什么 ?
 
 脚手架工具、上传、短链接、服务中间层
 
@@ -46,22 +36,9 @@ Object.defineProperty()
 - websocket中间层
 
 
-语言特点
-- 异步编程 (存在的问题，callbackhell + 同步异步混杂带来的数据不一致)
-- event loop & 任务队列
-
-microTask：MutationObsever 、Promise.then
-
-macroTask：setTimeout、MessageChannel、postMessage、setImmediate
-
-- callback、promise、async/await、eventEmiter
-- 手动实现一个eventEmiter？
-
-_ 模块化
-
-
-Object 的 this
-
-
-
 ## typeScript
+typeScript是javascript的超集
+
+
+## 本节包含ISSUE
+### js
