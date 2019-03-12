@@ -1,7 +1,5 @@
 
-
 ## 布局的种类
-### 元素的inline和block
 
 ### flow 布局
 
@@ -26,6 +24,7 @@
 ### svg
 
 ### canvas
+介绍几个api，toDataUrl：https://juejin.im/post/5a17c5e26fb9a04527254689
 
 ### dom 样式 api
 Client width : https://stackoverflow.com/questions/21064101/understanding-offsetwidth-clientwidth-scrollwidth-and-height-respectively
