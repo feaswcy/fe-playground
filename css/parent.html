@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parent</title>
+   
+</head>
+
+<body>
+    <strong>我是parent的html</strong>
+    <script>
+        // window.onload = function () {
+            const childPage = window.open('child.html', 'child')
+            console.log('childPage',childPage)
+            childPage.onload = () => {
+                childPage.postMessage('hello', location.origin)
+            }
+        // }
+    </script>
+</body>
+
+</html>

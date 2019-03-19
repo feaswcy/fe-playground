@@ -43,8 +43,8 @@
 + plugin会运行在preset之前
 + plugin会从第一个插件顺序执行，但presets是相反，从最后一个开始执行
 
-
 ## es6的新增语法
+
 
 ### 变量生命let 和 const
 
