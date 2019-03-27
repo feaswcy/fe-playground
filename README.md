@@ -5,12 +5,12 @@
 
 按照这个思路，将前端的基础知识分为以下一些模块
 
-+ algorithm。算法，作为计算机基础，熟悉常用算法能显著提高写代码的思路。
-+ css。主要和布局以及动画、web图形化相关
-+ html。主要关注一下html的语义化以及未来的发展
-+ js。熟悉一般javascript的语言特性，面向未来，掌握es6的使用。
++ [algorithm](algorithm/README.md)。算法，作为计算机基础，熟悉常用算法能显著提高写代码的思路。
++ [css](css/README.md)。主要和布局以及动画、web图形化相关
++ [html](html/README.md)。主要关注一下html的语义化以及未来的发展
++ [js](js/README.md)。熟悉一般javascript的语言特性，面向未来，掌握es6的使用。
 + project。 前端工程化
-+ web。 和web相关的只是，包括有浏览器技术、B/S架构的一些常见技术等
++ [web](web/README.md)。 和web相关的只是，包括有浏览器技术、B/S架构的一些常见技术等
 
 **一些提示**
 本repo主要记录技术相关的能力，实际上fe工程师作为一种职业，在技术上的能力往往不能够涵盖整个的能力水平，在和前辈的交流和分享中，得到一种fe能力模型，在这里贴出给大家参考：
@@ -40,3 +40,7 @@
 + ISSUE3：
 + ISSUE4：
 
+友情链接：
+1. [fex-team](https://github.com/fex-team)，前端工程化先驱
+2. [Alloy-team](https://github.com/AlloyTeam/)，腾讯最知名的前端团队，做的各种工具很好用
+3. [淘宝FED](http://taobaofed.org/)，技术视野非常广的团队，能力也很强。

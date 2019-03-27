@@ -6,7 +6,6 @@ http.createServer(function(req, res){
         'Content-Type': 'text/plain',
         'eTag':'asdasdas'
     })
-
     res.end('hi nice to meet sss')
     
 }).listen(9999)
