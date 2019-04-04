@@ -60,6 +60,7 @@ foo(function(error, value){
 这种方式在一些较低版本的js代码中很常见。
 
 ### Promise
+
 es6中promise规范，promise 的理解与实现
 
 
