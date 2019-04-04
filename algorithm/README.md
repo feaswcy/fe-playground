@@ -10,7 +10,7 @@ write leecode 每天刷至少两道题，时间控制在30分钟以内
 
 排序问题的意义在于将一些大小不同的数据按照一定的次序进行依次换位,按照是否使用外部存储常见排序算法分类为一下两种：
 <div align="center">
-    <img src="https://raw.githubusercontent.com/feaswcy/fe-playground/master/doc-assets/img/fe-power.png">
+    <img src="https://raw.githubusercontent.com/feaswcy/fe-playground/master/doc-assets/img/sort.png">
 </div>
 
 ## 斐波那契数列
