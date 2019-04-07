@@ -3,13 +3,16 @@
 - 专题汇总
 
   - [ISSUE1 正则表达式](issue/regExp.md)
-  - [ISSUE2 JS的执行上下文](issue/executeContext.md)
-  - [ISSUE3 JS异步编程](issue/asynchronous-programming.md)
+  - [ISSUE2 JS原型链与继承](issue/prototype.md)
+  - [ISSUE3 JS的执行上下文](issue/executeContext.md)
+  - [ISSUE4 JS异步编程](issue/asynchronous-programming.md)
+  - [ISSUE5 web性能优化方法论](issue/perform-tuning.md)
+  - [ISSUE6 Javascript style guide](issue/style-guide.md)
+  - [ISSUE7 vue常见问题问答](issue/vue.md)
 
 - HTML
   
   - [HTML标签与分类](html/README.md)
-
 
 - CSS
 

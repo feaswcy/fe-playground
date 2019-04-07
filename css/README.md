@@ -34,7 +34,20 @@
 1. 基本方式：Css3新增的支持多列布局的属性，通过简单的设置属性实现简单的多列布局
 2. 优点：功能简单并且强大，没有带来其他的问题，浏览器实现广泛
 3. 缺点(兼容性问题)：部分旧的浏览器可能还未实现支持flex布局
-4. 示例: <section><iframe></iframe></section>
+4. 示例:
+```html
+
+<section><iframe></iframe></section>
+<style>
+.container{
+    display: flex;
+    align-item: flex-start;
+    justfy-content: center; // space-between
+}
+
+</style>
+
+```
 
 
 ### 6.网格布局

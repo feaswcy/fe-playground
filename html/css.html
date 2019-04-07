@@ -60,24 +60,39 @@
     <pre>行内元素包含 iframe</pre>
     <!-- <iframe src="http://www.baidu.com" frameborder="0"></iframe>
     <iframe src="http://www.baidu.com" frameborder="0"></iframe> -->
+    <div id="demo">
+        <button id="remove"> remove </button>
+    </div>
 
     <script>
-        var function100 = function(x){
-            var c = 1
-            function b(){
-              return x + c
-            }
-            return b
-        }
-        function100()
+        document.querySelector('dl').addEventListener('click', function(e){
+            console.log('e.target', e.target)
+            console.log('e.currentTarget', e.currentTarget)
+        }, false)
 
-        function foo(i) {
-            if(i === 3) {
-                return
-            }
-            foo(i+1);
-        }
-        foo(0);
+        var p = document.createElement('p'),
+            text1 = document.createTextNode('text1'),
+            text2 = document.createTextNode('text2'),
+            demo = document.querySelector('#demo')
+
+        p.appendChild(text1)
+        p.appendChild(text2)
+        demo.appendChild(p)
+
+        document.querySelector('#remove').addEventListener('click', function(){
+            p.removeChild(text)
+        })
+
+        console.log('p.parentNode', p.parentNode)
+        console.dir('p', p)
+        console.log('demo.childNodes', demo.childNodes)
+        console.log('demo.children', demo.children)
+        console.log('text1.nextSibling', text1.nextSibling)
+        console.log('text1.nextElementSibling', text1.nextElementSibling)
+
+
+
+
     </script>
 </body>
 </html>

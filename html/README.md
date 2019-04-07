@@ -48,15 +48,58 @@ HTML标签按照分类可以分为块级元素和行内元素。
 
 ## DOM
 
+### Dom api
 Dom给javascript提供访问页面文档节点的方式，作为一名基础扎实的前端，下面的api需要熟练掌握：
 + document.getElementById()
 + document.getElementByTagName()
 + document.createElement()
++ document.createTextNode(data) // 创建一个文本节点，文本内容是data，文本节点通过appendChild可以添加到dom中
 + document.appendChild()
 + document.innerHTML
 + document.setAttribute(attr, value)
 + document.getAttribute(attr)
 + window.scrollTo()
+  
+### DOM节点的增删改查
+```js
+// 增
+parentElement.appendChild(childElement) 
+
+// 删
+parentElement.removeChild(childElement) 
+
+// 改
+parentElement.replaceChild(newChild, oldChild) 
+
+// 查
+Node.parentNode // 查询元素的父节点
+
+Node.children // 查询元素的子节点，只包含下一层
+
+Node.childNodes // 查询元素的所有子节点
+
+Node.nextSibling // 查询元素的下一个兄弟元素
+
+Node.previousSibling // 查询元素的上一个兄弟元素
+
+Node.firstChild // 返回node的第一个子元素
+
+
+### DOM事件
++ addEventListener
++ removeEventListener
++ creatEvent  // 创建一个事件，之后必须使用init进行初始化
++ dispatchEvent  // 触发一个事件，element.dispatchEvent(event)
+
+### DOM event
+DOM event，从顶向下先捕获，在从下到上在冒泡。
+
+event中currentEvent代表的事件监听器的当前元素，target代表点击的鼠标所指向的那个元素。
+
+
+
+```
+
 
 ### svg
 svg（Scalable Vector Graphics）,是一种描述二维矢量图形的图形格式，svg绘图的原理依靠**矢量**，而不是像素，因此放大缩小不会造成失真。它本质是一种文本文件，包含了对一个图形信息的矢量描述，体积一般较小。
@@ -75,6 +118,7 @@ svg是一个画布，在svg标签内部可以使用多种矢量图形标签来�
 + ``<path></path>``，绘制路径，有一个d属性代表绘制顺序，它的值是一个长字符串，每个字母代表一个绘制顺序，如下示例d="M 18,3 L 46,3 L 46,40 L 61,40 L 32,68 L 3,40 L 18,40 Z"
 
 *svg标签本身可以width和height 以及viewBox来指定宽、高、以及视窗起点*
+
 <svg width="100%" height="180" viewBox="0 0 100 100">
 <path d="
   M 18,3
