@@ -33,13 +33,6 @@
 关于前端的学习，推荐大家写技术博客，或者像本人这样进行系统化的梳理，再小的细节也不要懒惰，逃避，把想表达的写出来时，会让你对技术有一个更清晰的认识。
 
 
-其他
-对于一些专项适合讨论的主题，将会放在issue中，目前的专题已有
-+ ISSUE1：
-+ ISSUE2：
-+ ISSUE3：
-+ ISSUE4：
-
 友情链接：
 1. [fex-team](https://github.com/fex-team)，前端工程化先驱
 2. [Alloy-team](https://github.com/AlloyTeam/)，腾讯最知名的前端团队，做的各种工具很好用

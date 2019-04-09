@@ -1,11 +1,12 @@
-js部分按目前社区的主流语言的版本分类为
+### Javascript的版本
+按目前社区的主流语言的版本分类为
 + [js核心](js/js-core/README.md)
 + [EcmaScript 6](js/es6/README.md)
 + [nodejs](js/nodejs/README.md)
 + [typeScript](js/typescript/README.md)，微软推出的javascript的超集
 
-### js-core
-包含js核心知识，数据类型，原型、原型链，执行上下文，作用域，作用域链，闭包
+### Js-core
+包含js核心知识，数据类型，执行上下文，作用域链，原型链，闭包，函数柯里化
 
 - 基本数据类型
 
@@ -36,7 +37,6 @@ js部分按目前社区的主流语言的版本分类为
 
 - 相关工具 pm2中间层服务
 - websocket中间层
-
 
 ## typeScript
 typeScript是javascript的超集

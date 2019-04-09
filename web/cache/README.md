@@ -18,7 +18,8 @@
 
 ## 控制协商缓存
 控制协商缓存的主要是ETag和last-modified。
-| http response header key | http request headerkey |
+
+| http response header key | http request header key |
 | ------------- | ------------- |
 | ETag（服务端返回的当前资源的etag值）| If-None-Match(上一次服务器对于当前资源返回的etag值）|
 | Last-Modified（服务端返回的当前资源的最后修改时间）|If-Modified-Since(上一次服务器对于当前资源返回的最后修改时间）

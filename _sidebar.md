@@ -23,9 +23,9 @@
 - 数据结构与算法 Algorithm
   
   - [对数据结构与算法的思考](algorithm/README.md)
-  - [数据结构](algorithm/datastructures.md)
-  - [排序算法](algorithm/sort.md)
-
+  - [数据结构](algorithm/datastructures/datastructures.md)
+  - [排序算法](algorithm/sort/sort.md)
+  - [排序算法](algorithm/sort/sort.md)
 
 - 工程能力基础 Project-base
 
@@ -46,14 +46,15 @@
 - 工程实践 Project-partice
 
   - [前端工程实践分享](project-pratice/README.md)
-  - [移动端webapp](project-pratice/h5-webapp/README.md)
-  - [小程序](project-pratice/mini-program/README.md)
+  - [移动端web app](project-pratice/h5-webapp/README.md)
+  - [移动端应用（小程序、react native）](project-pratice/mini-program/README.md)
   - [nodejs server](project-pratice/node-server/README.md)
 
 - Web
   - [web开发必备](web/README.md)
   - [缓存](web/cache/README.md)
-  - [HTTP协议](web/http&https/README.md)
+  - [HTTP协议](web/http/README.md)
   - [安全](web/security/attack.md)
+  - [工程](web/project/README.md)
 
 - [联系作者](contact.md)
