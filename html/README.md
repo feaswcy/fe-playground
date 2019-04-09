@@ -84,6 +84,7 @@ Node.previousSibling // 查询元素的上一个兄弟元素
 
 Node.firstChild // 返回node的第一个子元素
 
+```
 
 ### DOM事件
 + addEventListener
@@ -96,9 +97,6 @@ DOM event，从顶向下先捕获，在从下到上在冒泡。
 
 event中currentEvent代表的事件监听器的当前元素，target代表点击的鼠标所指向的那个元素。
 
-
-
-```
 
 
 ### svg

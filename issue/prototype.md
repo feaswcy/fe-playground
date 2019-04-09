@@ -1,5 +1,5 @@
 
-## before start
+## 原型链与基于原型链的语言
 js 原型链的由来
 
 ## 辨别一些概念
@@ -50,11 +50,9 @@ var c = new Child();
 console.dir(c)
 c.Bs()  //Bs
 p.say()
-
 ```
 
-
-2. 组合继承（别称：call继承）
+2. **组合继承**（别称：call继承）
 
 在子类中，通过调用父类的构造函数，并使用call改变this指向，来让之类具有this上的属性和方法
 这种继承中，只能继承父类的私有属性，父类的公有方法无法继承到。
@@ -95,13 +93,14 @@ Child.prototype.constructor = Child;
 5. 中间件继承
 通过__proto__属性，将prototype指向父类的原型
 注意__proto__ 的实现是一个非标准的，只是一部分浏览器实现了此属性
+
 ```js
 function Parent(){
 	this.x = 100;
 }
 Parent.prototype.getX = function(){}
 function Child(){
-	
+
 }
 Child.prototype.__proto__ = Parent.prototype;
 var p = new Parent();
@@ -111,6 +110,7 @@ console.log(c)
 
 6. 寄生组合式继承
 通过Object方法，根据父类创建一个新的对象，并将原型链指向为新对象
+
 ```js
 function inheritPrototype(subType,superType){
 	var prototype = Object(superType.prototype);//创建对象
@@ -122,6 +122,7 @@ function inheritPrototype(subType,superType){
 
 7. 经典继承（道格拉斯继承）
 已知一个对象o，需要创建一个新的对象，这个新的对象继承自对象o。
+
 ```js
 //功能封装
 function create(o) {
