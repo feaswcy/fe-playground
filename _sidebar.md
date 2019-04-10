@@ -25,7 +25,8 @@
   - [对数据结构与算法的思考](algorithm/README.md)
   - [数据结构](algorithm/datastructures/datastructures.md)
   - [排序算法](algorithm/sort/sort.md)
-  - [排序算法](algorithm/sort/sort.md)
+  - [leecode经典](algorithm/leetcode/README.md)
+  - [用计算机的思维解决解决实际问题的思路](algorithm/method.md)
 
 - 工程能力基础 Project-base
 
