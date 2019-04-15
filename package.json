@@ -1,0 +1,25 @@
+{
+  "name": "fe-playground",
+  "version": "1.0.0",
+  "description": "to be better engineer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feaswcy/fe-playground.git"
+  },
+  "keywords": [
+    "fe"
+  ],
+  "author": "wangchang3910@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feaswcy/fe-playground/issues"
+  },
+  "homepage": "https://github.com/feaswcy/fe-playground#readme",
+  "dependencies": {
+    "node-xlsx": "^0.14.1"
+  }
+}
