@@ -9,18 +9,27 @@ function isArray(input) {
     return Object.prototype.toString.call(input) === '[object Array]'
 }
 
-// Array的方法
-Array.isArray()
+/**
+ * Array的方法 isArray, from, of
+ *  */
+Array.isArray() // 判断传入的参数是否是一个数组
 
-Array.from()
+Array.isArray([1,2,3]) // true
 
-Array.of()
+Array.from() // 从一个arrayLike对象创建一个array
+
+Array.from([1, 2, 3], x => x*2) // expected: [2, 4, 6]
+
+Array.of() // 创建一个由参数作为元素的数组
+
+Array.of(7); // [7]  注意Array(7)，创建的是7个empty元素的数组
+Array.of(1, 2, 3); // [1, 2, 3]
 
 
 // Array的实例方法（原型链方法）
 
 /* 迭代器方法
-* every, fliter, forEach, map, reduce, some, reduce​Right
+* every, fliter, forEach, map, reduce, some, find, reduce​Right,
 */
 // every : 测试数组的所有元素是不是都通过了测试
 let arr = [1, 2, 5, 30]
@@ -68,20 +77,74 @@ let hasEvenNumber = arr.some(item => {
 })
 console.log(hasEvenNumber) // true， 因为2是偶数
 
+// find： 返回第一个满足测试函数的数组项的值，否则返回undefined
+let arr = [1, 2, 3, 4, 5]
+let firstItemAbove5 = arr.find((item) => {
+    return item > 5
+})
+console.log(firstItemAbove5) // undefined, 换成3， 将返回4
+
+// findIndex: 返回第一个满足测试函数的数组项的index，未找到则返回undefined
+let arr = [1, 2, 3, 4, 5]
+let firstIndexOfItemAbove5 = arr.find((item) => {
+    return item > 5
+})
+console.log(firstIndexOfItemAbove5) // undefined, 换成3， 将返回2
+
 /**
  * 查询方法,
- * entrier, find, findIndex, includes, indexOf, keys, lastIndexOf, values,
+ * entrier, keys, values, includes, indexOf, lastIndexOf
  */
-// entrier
+// entries, keys, values 数组转化为 Iterator对象的操作方法，分别返回数组的Iterator对象，Iterator对象的keys、values
+let array1 = ['a', 'b', 'c'];
+let iterator1 = array1.entries(); 
+let iteratorKeys = array1.keys()
+let iteratorValues = array1.values()
+
+console.log(iterator1.next()) // {done : false, value: [0, "a"]}
+
+for (let key of iteratorKeys) {
+    console.log(key); // expected output: 0 1 2
+}
+for (let key of iteratorValues) {
+    console.log(key); // expected output: 'a' 'b' 'c'
+}
+
+// includes:判断一个数组是否包含一个指定的值 indexOf: 返回数组的指定index的数组值
+array1.includes('a') // true
+array1.indexOf('a') // 0
+
+/**
+ * 转换方法 copyWithin, fill, flat, reverse, concat， join,
+ *  */
+
+// copyWithin，浅复制数组的一部分到数组的另一个位置，并返回它，而不修改数组的大小
+var array1 = ['a', 'b', 'c', 'd', 'e'];
+// 在index 0 copy 数组index 3-4之前的元素，但不改变数组的大小（length）
+console.log(array1.copyWithin(0, 3, 4)); // expected output: Array ["d", "b", "c", "d", "e"]
+
+// fill 从指定长度填充数组
+var array1 = [1, 2, 3, 4];
+
+// 第一个参数代表需要填充的值，2，4分别代表填充的起始范围和终止范围
+console.log(array1.fill(0, 2, 4)); // expected output: [1, 2, 0, 0]
+
+// flat：将一个数组拍平，可传入参数座位数组结构的深度
+var arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2); // [1, 2, 3, 4, 5, 6]
+
+// reverse : 将数组颠倒，将会改变原来的数组
+var array1 = ['one', 'two', 'three'];
+var reversed = array1.reverse();
+console.log('reversed: ', reversed); // expected output: Array ['three', 'two', 'one']
+console.log('array1: ', array1); // expected output: Array ['three', 'two', 'one']
 
 
-
-// 转换方法 concat,copyWithin,fill,flat,flatMap,join,sort,reverse,unshift
-
-
-
-
-// 基础方法 map, pop, push, shift, slice, splice, toString, toLocalString,
+/**
+ * 基础方法 map, pop, push, shift, unshift， slice, splice, toString, toLocalString,
+ * 对数组元素进行操作的方法， 可以参考数据结构与算法中队列的描述
+ */
+// 
 
 
 
