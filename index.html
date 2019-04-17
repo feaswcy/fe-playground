@@ -12,6 +12,11 @@
 <body>
   <div id="app">站点加载中···</div>
   <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <script>
     window.$docsify = {
       loadSidebar: true,
       repo: 'https://github.com/feaswcy/fe-playground'

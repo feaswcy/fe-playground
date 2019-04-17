@@ -1,12 +1,31 @@
-## Before Start 先了解一些概念
+## 为什么写这篇issue？
+js中异步的概念*非常重要*，但是对于底层的逻辑似乎总是理解的不清楚，因此本篇issue将会比较全面的分析一下异步编程的几种方式，并力图通过优缺点的比较，让读者理解清楚底层的原理。
 
 ## javascript的运行机制
 js在设计之初借鉴了其他的GUI语言，将它设计成一门单线程执行的语言，因此在js当中抽离出单独的事件循环的模型来处理异步操作，根据这一机制，在开发者实际写代码的过程中，会面临很多需要选择异步编程模型的地方，本文将会总结js的四种主流异步编程模型，并比较不同编程模型的优缺点。
 
+
 ## 先了解一下规范以及相关概念
+
+> 深度好文推荐： https://github.com/aooy/blog/issues/5，讲清楚了浏览器的执行机制
+
+### 浏览器的单线程和js语言的单线程是什么关系？
+
+### event loop是浏览器的机制还是js引擎的机制？ 浏览器如何设计异步任务的处理与js主线程的执行？
+
+### macroTask和microTask是如何定义的
+
+### 
+
 Event loop & 任务队列
-+ microTask：MutationObsever 、Promise.then
+> 看完本文仍有疑惑，可参考实例进行操作，https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/
+
+以下函数、api对microTask和macroTask进行了分类
++ microTask：MutationObsever 、Promise.then、process.nextTick（nodejs）
 + macroTask：setTimeout、MessageChannel、postMessage、setImmediate
+
+
+
 
 ## 异步编程的四种方式
 在长期的编程实践中，js开发者以及社区总结出js 异步编程的四种模式：``回调函数、Promise、EventEmitter、generator与async、await``, 下面分别比较一下四种方式的写法以及优缺点
@@ -62,6 +81,9 @@ foo(function(error, value){
 ### Promise
 
 es6中promise规范，promise 的理解与实现
+
+
+
 
 
 ### 订阅者模式eventEmiter

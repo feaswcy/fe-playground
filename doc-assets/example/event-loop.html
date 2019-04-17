@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <div id="demo">aaa</div>
+    
+    
+    <script>
+      // 只有一个script时：
+      // script1 promise1 resolved
+      // event-loop.html:38 script1 promise2 resolved
+      // event-loop.html:46 script 2
+      // event-loop.html:48 script2 promise2 resolved
+      // event-loop.html:27 script 0
+      // event-loop.html:33 script1 promise1 timer end
+      // event-loop.html:40 script1 promise2 timer end
+      // event-loop.html:50 script2 promise2 timer end
+
+      
+      let demo = document.querySelector('#demo')
+      setTimeout( () =>{
+        console.log('script 0')
+      },0)
+
+      Promise.resolve().then(() =>{
+        console.log('script1 promise1 resolved')
+        setTimeout( () =>{
+          console.log('script1 promise1 timer end')
+        },0)
+      })
+
+      Promise.resolve().then(() =>{
+        console.log('script1 promise2 resolved')
+        setTimeout( () =>{
+          console.log('script1 promise2 timer end')
+        },0)
+      })
+   
+      console.log('script 2')
+      Promise.resolve().then(() =>{
+          console.log('script2 promise2 resolved')
+          setTimeout( () =>{
+            console.log('script2 promise2 timer end')
+          },0)
+      })
+    </script>
+
+    <script>
+      console.log('in script 3')
+      setTimeout( () =>{
+        console.log(333)
+      },0)
+      Promise.resolve().then(() =>{
+        console.log('script3 resolved')
+      })
+    </script>
+      
+    <script>
+      setTimeout( () =>{
+        console.log(222)
+      },0)
+       Promise.resolve().then(() =>{
+         console.log('script2 resolved')
+       })
+    </script> -->
+</body>
+</html>
