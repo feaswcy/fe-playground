@@ -1,4 +1,6 @@
 ## vue的组件式开发
+https://juejin.im/book/5bc844166fb9a05cd676ebca/section/5bc844166fb9a05cf52af65f
+
 
 ## 组件化开发的内涵
 + 借助框架，实现框架的组件
