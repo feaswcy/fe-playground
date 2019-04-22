@@ -44,9 +44,20 @@ console.log('-- TEST string --')
  console.log('-- TEST number --')
 
  /**
-  * 
-  * 
+  * 数字类型，注意一下js 的按位操作符，&、|、^、~、<<、>>、>>>
+  * &:按位与，|:按位非、^按位异或、~按位非、<<按位左移、>>按位右移(有符号右移)、>>>（无符号右移）
+  *
   */
+// 异或用来判断两个数字是否相等
+var a= 1, b=1
+console.log(a ^ b) // 相等时，异或值为0
+
+// Number 的方法，静态方法（构造函数方法）: isNaN, parseInt, parseFloat.
+
+
+// number 示例方法:toFixed(),
+
+
 
 
 console.log('-- TEST Object --')
