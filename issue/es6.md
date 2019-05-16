@@ -24,6 +24,21 @@ import & export，commonjs的module会在require的时候进行执行，然后�
 
 
 
+### es6的 class
+
+es6的class 是es5原型形式的语法糖。主要区别有以下几点：
++ class定义的方法实际是原型链对象上的方法，这点和一般经典js继承的写法一致（Person.prototype.xxx）,但是es6 class声明的方法都是**不可枚举的**，即用for in 语句无法枚举出，而es5可以
++ constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法，constructor默认返回示例对象，类的构造函数必须通过new 调用，但是使用一般的构造函数可以直接执行（将会把this绑定到外部）
+  
+
+class还有一些其他的特点：
++ 实例属性和方法都需要写在this上，原型链方法声明在class内
++ 子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工
+
+
+
+
+
 在一些浏览器还未实现es6的情况下，要使用到es6的特性，必须学会使用babel进行转译，因此这里介绍一下babel
 
 ## babel的处理过程

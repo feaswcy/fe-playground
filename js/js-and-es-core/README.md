@@ -48,6 +48,10 @@ Object.defineProperties() 定义多个对象属性或方法(可以设置读写�
   - 转换方法 copyWithin, fill, flat, reverse, concat， join
   - 基础方法 map, pop, push, shift, unshift， slice, splice, toString, toLocalString
 
+## Function
+javscript中函数是一等公民，可以有多种方式进行使用，和其他语言相比，js的function主要有以下特点：
++ 可做为构造函数
+js 中本身无class 关键字（在es 6中实现的只是语法糖）
 
 
 ### 参考阅读

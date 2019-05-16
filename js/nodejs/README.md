@@ -7,6 +7,9 @@ nodejs 从出生以来就被各种吹捧，对于会写js 的程序员来说，�
 3.一些简单的服务（比较典型的文件上传服务、短链服务等），可以作为对外输出的基础能力
 
 
+## 可以帮助的nodejs教程
+nodejs基本课程 ： https://github.com/alsotang/node-lessons
+
 ## module
 
 

@@ -1,13 +1,17 @@
 ## 为什么写这篇issue？
-js中异步的概念*非常重要*，但是对于底层的逻辑似乎总是理解的不清楚，因此本篇issue将会比较全面的分析一下异步编程的几种方式，并力图通过优缺点的比较，让读者理解清楚底层的原理。
+javascript在设计之初借鉴了其他的GUI语言，将它设计成一门单线程执行的语言，单线程意味无法并行的处理计算任务（执行代码），但是javascript中异步的概念*非常重要*，对于底层的逻辑似乎总是理解的不清楚，因此本篇issue将会比较全面的分析一下异步编程的几种方式，并力图通过优缺点的比较，让读者理解清楚底层的原理。
 
-## javascript的运行机制
-js在设计之初借鉴了其他的GUI语言，将它设计成一门单线程执行的语言，因此在js当中抽离出单独的事件循环的模型来处理异步操作，根据这一机制，在开发者实际写代码的过程中，会面临很多需要选择异步编程模型的地方，本文将会总结js的四种主流异步编程模型，并比较不同编程模型的优缺点。
+## 在开始之前
+如果你是一名刚刚入门的初级工程师，本文的内容可能不太适合阅读，如果你想跟着我的思路把js的异步概念理解清楚，那么开始之前，先思考一下自己是否理解一下几个概念或者名词：
++ 进程、线程。
++ 基础数据结构中的队列
++ 重绘与回流
+
+如果你已经了解了上面的几个概念，可以更进一步，了解事件循环（event loop）
 
 
-## 先了解一下规范以及相关概念
 
-> 深度好文推荐： https://github.com/aooy/blog/issues/5，讲清楚了浏览器的执行机制
+## 开始之前的概念辨析
 
 ### 浏览器的单线程和js语言的单线程是什么关系？
 **浏览器并非单线程，而是多进程**，浏览器本身有一个browser主进程，每打开一个tab页将会开启一个子进程，输入网址后，主进程进行dns，tcp/ip等底层协议的实现和通信，下载完成后把html、css等静态资源提供给tab页的子进程。
@@ -18,7 +22,11 @@ js在设计之初借鉴了其他的GUI语言，将它设计成一门单线程执
 + 计时器线程，用来处理和计时相关的api，如setTimeout，setInterval
 + 网络请求线程，用来发起和处理xmlHttpRequest
 
-### event loop是浏览器的机制还是js引擎的机制？ 浏览器如何设计异步任务的处理与js主线程的执行？
+
+## 事件循环（event loop）
+
+### 什么是事情循环event loop， 事情循环是浏览器的机制还是js引擎的机制？ 浏览器如何设计异步任务的处理与js主线程的执行？
+
 event loop是浏览器处理异步事件的一种机制，js代码中出现异步事件调用时，浏览器将会把异步事件放置到事件队列中去，并根据异步事件的类型划分成macroTask和microTask存储到事件管理线程的事件队列中，然后继续向下执行同步代码，直到同步代码执行完毕。
 同步代码执行完毕后，浏览器将会调度事件队列中的事件给js引擎处理，浏览器调度事件队列的机制为：
 
@@ -49,7 +57,7 @@ WorkerGlobalScope对象的closing标识为true，则销毁event loop，中止这
 10. 将microtask checkpoint的flag设为flase。
 
 
-### macroTask和microTask是如何定义的
+### macroTask和microTask是如何定义的？
 macroTask： 在[Generic task sources](https://html.spec.whatwg.org/multipage/webappapis.html#generic-task-sources)中提及了可以被视为macroTask的异步任务：
 + DOM操作任务源：
 此任务源被用来相应dom操作，例如一个元素以非阻塞的方式插入文档。
@@ -83,6 +91,7 @@ HTML Standard没有具体指明哪些是microtask任务源，通常认为是micr
 
 
 ## 异步编程的四种方式
+了解了原理，具体我们写代码有哪些方式呢？
 在长期的编程实践中，js开发者以及社区总结出js 异步编程的四种模式：``回调函数、Promise、EventEmitter、generator与async、await``, 下面分别比较一下四种方式的写法以及优缺点
 （异步编程 (存在的问题，callbackhell + 同步异步混杂带来的数据不一致)）
 ### 回调函数callback
@@ -155,3 +164,6 @@ https://hijiangtao.github.io/2017/08/03/How-to-Manipulate-DOM-Effectively/
 https://www.jianshu.com/p/d3a02ffe94b6
 
 ## 总结
+
+## 参考资料
+> 深度好文推荐： https://github.com/aooy/blog/issues/5，讲清楚了浏览器的执行机制
