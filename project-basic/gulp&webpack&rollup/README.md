@@ -3,6 +3,7 @@
 
 ## grunt 与 gulp
 
+
 ## rollup
 常用语lib
 
@@ -258,3 +259,8 @@ exports.push([module.i, ".wrapper {\n  -webkit-box-sizing: border-box;\n ]);
 ```
 
 
+
+
+
+## 手动实现一个module bundler
+通过对webpack的一些分析，排除webpack处理配置以及 loader输入出书、plugin的机制等方面，我们可以针对module方面手动实现一个简易的模块打包器

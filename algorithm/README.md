@@ -5,6 +5,22 @@ write leecode 每天刷至少两道题，时间控制在30分钟以内
 ## 数据结构与算法
 主要参考自loiane 的 [javascript-datastructures-algorithms](https://github.com/loiane/javascript-datastructures-algorithms) repo 实现
 
+## 如何学习数据算法与结构
+1.chunk it up
+
+2.delibrately pratice
+
+3.feedback
+
+切题四件套：
+clarification
+
+possible solutions
+
+coding
+
+test
+
 ## 排序算法
 主要参考自Damonare的 [十大经典排序算法总结（js描述）]（https://juejin.im/post/57dcd394a22b9d00610c5ec8）repo实现
 
