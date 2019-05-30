@@ -32,7 +32,7 @@ Object.keys(obj) 返回一个由给定对象的所有可枚举自身属性的属
 Object.getOwnPropertyNames(obj)：返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性）组成的数组
 Object.is(value1, value2)：判断两个值是否是同一个值。
 Object.create(proto [, propertiesObject ]) 是E5中提出的一种新的对象创建方式，第一个参数是要继承的原型，如果不是一个子函数，可以传一个null，第二个参数是对象的属性描述符，这个参数是可选的。
-Object.assign 把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象。
+Object.assign() 把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象。
 Object.defineProperty() 定义单个对象属性或方法(可以设置读写可枚举)
 Object.defineProperties() 定义多个对象属性或方法(可以设置读写可枚举)
 ```

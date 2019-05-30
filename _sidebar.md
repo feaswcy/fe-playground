@@ -15,7 +15,7 @@
 - Javascript
 
   - [javascript漫谈](js/README.md)
-  - [js核心](js/js-core/README.md)
+  - [js核心](js/js-and-es-core/README.md)
   - [The good part of javascript: ES6的诞生](js/es6/README.md)
   - [服务端的javscript？！](js/nodejs/README.md)
   - [有类型的javascript：typescript](js/typescript/README.md)
