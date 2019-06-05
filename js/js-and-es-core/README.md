@@ -1,26 +1,22 @@
 
-## js-core : javscript 核心知识与对象方法
+## js-core：Javscript语言的基本数据类型与核心对象方法
 本篇从js汇总内置对象的构造函数与实例方法，包括js中所有数据类型分类。注意，这里的数据类型的属性和方法都以ES6为标准，有些方法可能在ES5上并未实现。
 
-主要包括以下三种分类：
-+ 基本数据类型： null， undefined，boolean，string，object，number，
-+ 复合类型function array
-+ 特殊类型RegExp， Date（日期)
-
-基本数据类型方法全部在js-core/basic目录下，[查看]()
-
-符合类型较为复杂，直接放到了js-core目录下的 [array.js]() 和 [function.js]()
-
-特殊类型，一般用在特殊的场景，也直接放在了js-core目录下，[reg.js]()和[date.js]()
-
+基本数据类型方法全部在js-core/basic目录下, 主要包括以下三种分类：
++ `基本数据类型`, 所有基本数据类型的特性和方法放在了basic目录下，查看[基础数据类型](https://github.com/feaswcy/fe-playground/tree/master/js/js-and-es-core)： null， undefined，boolean，string，object，number，
++ `复合类型`, 包含function、array，复合类型较为复杂，直接放到了js-core目录下的, 查看[function](https://github.com/feaswcy/fe-playground/tree/master/js/js-and-es-core), [array](https://github.com/feaswcy/fe-playground/tree/master/js/js-and-es-core)
++ `特殊类型`, 包含RegExp， Date，一般用在特殊的场景，也直接放在了js-core目录下，查看[RegExp](https://github.com/feaswcy/fe-playground/tree/master/js/js-and-es-core), [Date](https://github.com/feaswcy/fe-playground/tree/master/js/js-and-es-core)
 
 ## 重要方法概览
 在es6中对Object 和 Array的方法做了较多的扩展，这些方法平时相对使用较少，在这里单独列举出来，方便查看和使用
 
 ### Object（属于基础数据类型)
 
+ES 6新增单独列出：
++ Object.is、assign、getOwnPropertyDescriptors，setPrototypeOf，getPrototypeOf
++ Object.keys()，Object.values()，Object.entries()，Object.fromEntries()
++ \__proto\__属性
 
-ES 6新增
 ```js
 Object.preventExtensions(obj)  让一个对象变的不可扩展，也就是永远不能再添加新的属性。
 Object.isExtensible(obj) 判断一个对象是否是可扩展的
@@ -38,8 +34,7 @@ Object.defineProperties() 定义多个对象属性或方法(可以设置读写�
 ```
 
 
-
-### Array
+### 复合数据类型一：Array
 数组的方法分类:
 + 构造函数方法（公有方法、静态方法）：
 + 实例方法（原型链方法）：
@@ -48,13 +43,13 @@ Object.defineProperties() 定义多个对象属性或方法(可以设置读写�
   - 转换方法 copyWithin, fill, flat, reverse, concat， join
   - 基础方法 map, pop, push, shift, unshift， slice, splice, toString, toLocalString
 
-## Function
+## 复合数据类型二：Function
 javscript中函数是一等公民，可以有多种方式进行使用，和其他语言相比，js的function主要有以下特点：
 + 可做为构造函数
 js 中本身无class 关键字（在es 6中实现的只是语法糖）
 
 
 ### 参考阅读
-[js数据类型](https://juejin.im/post/5b2b0a6051882574de4f3d96 )
+[js数据类型](https://juejin.im/post/5b2b0a6051882574de4f3d96)
 
 
