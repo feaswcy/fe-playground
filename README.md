@@ -48,16 +48,16 @@ h5直接和用户接触，对于一个大型的互联网应用而言，用户体
 **前端技能图谱**
 仅做了解，一个人不可能面面都精通，但应该知道有哪些方面
 <div align="center">
-    <img  src="https://raw.githubusercontent.com/feaswcy/fe-playground/master/doc-assets/img/knowledge.jpeg" width="360" height="720" alt="knowlege"/>>
+    <img  src="https://raw.githubusercontent.com/feaswcy/fe-playground/master/doc-assets/img/knowledge.jpeg" alt="knowledge"/>
 </div>
 
-*友情链接*：
+`友情链接`：
 1. [fex-team](https://github.com/fex-team)，前端工程化先驱
 2. [Alloy-team](https://github.com/AlloyTeam/)，腾讯最知名的前端团队，做的各种工具很好用
 3. [淘宝FED](http://taobaofed.org/)，技术视野非常广的团队，能力也很强。
 
 
-*在线工具*：
+`在线工具`：
 博客中可能用到一些example，不容易在本地跑起来，这里推荐几个在线的前端编辑环境
 + [JSFiddle](https://jsfiddle.net/chrisvfritz/50wL7mdz/), 
 + [JSBin](https://jsbin.com/) 
