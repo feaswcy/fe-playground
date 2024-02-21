@@ -1,0 +1,20 @@
+{
+  "name": "mini-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --mode development --entry ./src/webpack/index.js --output-path dist",
+    "help": "webpack --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.36.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.0"
+  }
+}
